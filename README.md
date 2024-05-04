@@ -6,9 +6,9 @@ envはWiFi設定ファイル <br>
 WIFI_SSIDとWIFI_PASSは環境に合わせて設定が必要。
 
 必要なパッケージ（ライブラリ）は以下の通り。<br>
-bme280.py
-esp8266_i2c_lcd.py
-lcd_api.py
+bme280.py <br>
+esp8266_i2c_lcd.py <br>
+lcd_api.py <br>
 
 参考にさせていただいたWEBは以下の通りです。深謝いたしますとともに、謝辞申し上げます。<br>
 MicroPython:NTPとRTCを使って時計を表示 " https://plaza.rakuten.co.jp/washiinuru/diary/202309100000/ " <br>
