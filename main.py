@@ -75,8 +75,6 @@ wlan = network.WLAN(network.STA_IF)
 ip_address = wlan.ifconfig()[0]
 lcd.move_to(6,0)
 lcd.putstr("Wellcome")
-lcd.move_to(7,3)
-lcd.putstr("JK1ALG")
 lcd.move_to(3,2)
 lcd.putstr(" {}".format(ip_address))
 time.sleep(2)
