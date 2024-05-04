@@ -10,7 +10,7 @@ bme280.py
 esp8266_i2c_lcd.py
 lcd_api.py
 
-参考にさせていただいたWEBは以下の通りです。深謝いたしますとともに、謝辞申し上げます。
+参考にさせていただいたWEBは以下の通りです。深謝いたしますとともに、謝辞申し上げます。<br>
 MicroPython:NTPとRTCを使って時計を表示 " https://plaza.rakuten.co.jp/washiinuru/diary/202309100000/ "
 Raspberry Pi Pico MicroPython BME280テスト " https://blog.goo.ne.jp/jh7ubc/e/07755b250db432675611dff9f9ea1144 "
 温湿度センサーを使って熱中症対策デバイスを作る " https://info.picaca.jp/12370 "
