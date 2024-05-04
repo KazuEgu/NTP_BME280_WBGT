@@ -140,8 +140,8 @@ while True:
     lcd.move_to(0,0)
     lcd.putstr("Date:")
     lcd.move_to(5,0)
-    lcd.putstr("{:4d}".format(nowtime[0]) + "/" + "{:02d}".format(nowtime[1]) + "/" + "{:02d}".format(nowtime[2]))
-    lcd.putstr("({})".format(weekday))
+    lcd.putstr("{:4d}/{:02d}/{:02d}".format(jst_struct_time[0], jst_struct_time[1], jst_struct_time[2]))
+    lcd.putstr("({})".format(weekdays[jst_struct_time[6]]))
     
     lcd.move_to(0, 1)
     lcd.putstr("{:02d}:{:02d}:{:02d}".format(jst_struct_time[3], jst_struct_time[4], jst_struct_time[5]))
