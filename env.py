@@ -1,0 +1,3 @@
+WIFI_SSID="SSID"
+WIFI_PASS="PASSWORD"
+NTP_SERVER="ntp.nict.jp"
