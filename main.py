@@ -49,6 +49,7 @@ class NET(object):
         http_buffer = response.text
         response.close()
         return http_buffer
+    
     #NTPサーバから時刻取得
     def get_ntpdatetime(self,server):
         NTP_DELTA = 2208988800 #1900/1/1から1970/1/1までの秒数
@@ -127,7 +128,6 @@ while True:
     # WBGTを計算&LED制御
     # WBGT Threshold
     NOTIFY_LEVEL1 = 28
-    # Calc WBGT & Warning RED LED
     t, p, h = bme.read_compensated_data()
     ti = round(t / 100, 1)
     p = p // 256
@@ -137,6 +137,7 @@ while True:
     value = round(value)
     print("WBGT: {}".format(value))
     
+    #LCD表示
     lcd.move_to(0,0)
     lcd.putstr("Date:")
     lcd.move_to(5,0)
@@ -146,10 +147,9 @@ while True:
     lcd.move_to(0, 1)
     lcd.putstr("{:02d}:{:02d}:{:02d}".format(jst_struct_time[3], jst_struct_time[4], jst_struct_time[5]))
     lcd.putstr(" <UTC>")
-    lcd.putstr("{:02d}:{:02d}".format(utc_struct_time[3], utc_struct_time[4], utc_struct_time[5]))
+    lcd.putstr("{:02d}:{:02d}".format(utc_struct_time[3], utc_struct_time[4]))
 
-    if (cnt) == 50:
-        lcd.clear()
+    if (jst_struct_time[5])%30 == 0:
         t, p, h = bme.read_compensated_data()
         ti = round(t / 100, 1)
         p = p // 256
@@ -174,10 +174,6 @@ while True:
         
     print(cnt)
     cnt += 1
-    
-    if not cnt%51 == 0:
-        continue        
-    cnt=0
     
  except KeyboardInterrupt:
      sys.exit()
