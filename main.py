@@ -171,6 +171,9 @@ while True:
     led.value(1)
     time.sleep(0.2)
     led.value(0)
+    
+    if (cnt) == 100:
+        cnt = 0
         
     print(cnt)
     cnt += 1
