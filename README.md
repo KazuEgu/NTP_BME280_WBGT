@@ -10,6 +10,9 @@ bme280.py <br>
 esp8266_i2c_lcd.py <br>
 lcd_api.py <br>
 
+以下のBLOGにもう少し詳細記載しています。
+https://kazuho-e-blog.tokyo/?p=3059
+
 参考にさせていただいたWEBは以下の通りです。謝辞申し上げます。<br>
 MicroPython:NTPとRTCを使って時計を表示 " https://plaza.rakuten.co.jp/washiinuru/diary/202309100000/ " <br>
 Raspberry Pi Pico MicroPython BME280テスト " https://blog.goo.ne.jp/jh7ubc/e/07755b250db432675611dff9f9ea1144 " <br>
