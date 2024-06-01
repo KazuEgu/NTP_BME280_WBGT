@@ -10,7 +10,7 @@ bme280.py <br>
 esp8266_i2c_lcd.py <br>
 lcd_api.py <br>
 
-以下のBLOGにもう少し詳細記載しています。
+以下のBLOGにもう少し詳細記載しています。<br>
 https://kazuho-e-blog.tokyo/?p=3059
 
 参考にさせていただいたWEBは以下の通りです。謝辞申し上げます。<br>
