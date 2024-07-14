@@ -14,6 +14,6 @@ lcd_api.py <br>
 https://kazuho-e-blog.tokyo/?p=3059
 
 参考にさせていただいたWEBは以下の通りです。謝辞申し上げます。<br>
-MicroPython:NTPとRTCを使って時計を表示 " https://plaza.rakuten.co.jp/washiinuru/diary/202309100000/ " <br>
-Raspberry Pi Pico MicroPython BME280テスト " https://blog.goo.ne.jp/jh7ubc/e/07755b250db432675611dff9f9ea1144 " <br>
-温湿度センサーを使って熱中症対策デバイスを作る " https://info.picaca.jp/12370 "
+MicroPython:NTPとRTCを使って時計を表示<br>" https://plaza.rakuten.co.jp/washiinuru/diary/202309100000/ " <br>
+Raspberry Pi Pico MicroPython BME280テスト<br>" https://blog.goo.ne.jp/jh7ubc/e/07755b250db432675611dff9f9ea1144 " <br>
+温湿度センサーを使って熱中症対策デバイスを作る<br>" https://info.picaca.jp/12370 "
